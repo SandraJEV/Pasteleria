@@ -167,7 +167,7 @@ main h2{
 main .contenedor-tarjetas{
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 100px;
+    margin: 50px 100px;
 
 }
 main .tarjeta{
@@ -178,8 +178,12 @@ main .tarjeta{
     margin: 20px 30px;
     padding: 5px 10px;
     box-shadow: 5px 8px 8px 3px #021f5885;
-
+    cursor: pointer;
 }
+ main .tarjeta:hover{
+     background-color: var(--color-formulario);
+ }
+
 main .pastel {
     width: 310px;
     height: 265px;
