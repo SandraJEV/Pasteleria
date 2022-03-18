@@ -7,24 +7,275 @@ html {
     font-size: 62.5%;
 }
 :root{
-    
+   --color-fondo: #FEFBF8; 
+   --color-principal: #528ee3e1;
+   --color-letras: #212121; 
+   --color-letras-secundario: #F5F8FF; 
+   --color-formulario: #c0daff91; 
+   --color-lineas: #5585FF; 
+
+
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Karla', sans-serif;    
+    font-size: 1.6rem;
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    
 }
 
 a{
     text-decoration: none;
     cursor: pointer;
+    color: var(--color-letras-secundario);
 }
-header{
+
+header {
     width: 100%;
-    height: 100px;
+    height: 135px;
+    background-color: var(--color-principal);  
+    display: flex;  
+    justify-content:space-between
+}
+
+header .logo{
+    width: 190px;
+    height: 135px;
+}
+
+header nav {
+    
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+}
+
+header nav .izquierda {
+    display: flex;
+    list-style-type:none;
+    
+    
+}
+nav .izquierda a{
+    padding: 0 10px;
+}
+nav .izquierda a:hover{
+    border-radius: 10px;
+
+    background-color: var(--color-formulario);
+    cursor: pointer;
+}
+
+nav .izquierda .letras{
+    margin: 55px 25px;
+}
+
+nav .izquierda .li-input{
+    margin: 35px 15px;
+}
+
+nav .izquierda .input-contenedor{
+    height: 52px;
+    width: 344px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .izquierda .input-contenedor input{
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif; 
+    color: var(--color-letras-secundario);
+    background-color: #5585ff00;
+    
     
 }
 
-header img {
-    height: 80px;
-    width: 80px;
+.input-contenedor input:focus{
+    outline: none
+}
+
+
+.input-contenedor input::placeholder{
+    color: var(--color-letras-secundario);
+    font-size: 1.6rem;
+
+}
+
+.input-contenedor:hover{
+    border: 2px solid var(--color-lineas);
+    cursor: pointer;
+}
+
+nav .izquierda .buscar{
+    margin: 10px 05px;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+main h1{
+    font-size: 4rem;
+    color: var(--color-letras);
+    text-align: center;
+    margin: 50px 0;
+}
+
+.titulo {
+    font-weight: 600;
+    margin: 10px 20px;
+}
+
+.combinar{
+    margin: 10px 20px;
+}
+main .contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 100px;
+
+}
+main .tarjeta{
+    display: block;
+    border-radius: 10px;
+    width: 360px;
+    height: 350px;
+    margin: 20px 100px;
+    padding: 5px 10px;
+    box-shadow: 5px 8px 8px 3px #021f5885;
+    cursor: pointer;
+}
+ main .tarjeta:hover{
+     background-color: var(--color-formulario);
+ }
+
+.tarjeta .pastel {
+    width: 310px;
+    height: 240px;
+    margin: 15px 20px;
+}
+
+ .tarjeta .nombre{
+    text-align: center;
+    
+    font-weight:700;
+}
+
+ .tarjeta .precio {
+    
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contenedor{
+    margin: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color-letras);
+    margin: 100px 0;
+}
+.contenedor h2{
+    margin: 30px 0;
+    text-align: center;
+}
+form {
+    width: 1105px;
+    height: 665px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 3px #021f5885;  
+    display: flex;
+    flex-direction: column;
+}
+
+
+form input{
+    width: 825px;
+    height: 42px;
+    border: none;
+    background-color: var(--color-formulario);
+    color: var(--color-letras);
+    font-size: 1.6rem;
+    margin: 27px 135px;
+    box-shadow: 0px 3px 0px  0px var(--color-lineas);  
+
+
+}
+
+
+form .telefono{
+    width: 400px;
+    height: 42px;
+}
+
+form .descripcion{
+    width: 825px;
+    height: 120px;
+    
+}
+form input:focus {
+    outline: none;
+}
+form input::placeholder{
+    color: var(--color-lineas);
+    font-size: 1.6rem;
+    padding-left: 20px;
+}
+
+form .button{
+    display: flex;
+    justify-content: center;
+}
+form .button a{
+    width: 152px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: var(--color-letras-secundario);
+    background-color: var(--color-principal);
+    border: none;
+    cursor: pointer;
+    padding: 17px 17px 0 48px;
+
+}
+
+form .button a:hover{
+    background-color: var(--color-lineas);
+}
+
+footer{
+    background-color: var(--color-principal);
+    width: 100%;
+    color: var(--color-letras-secundario);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+footer .redes img{
+    width: 50px;
+    margin: 80px 25px;
+
+}
+
+footer .datos{
+    margin: 20px 0;
+}
+footer .datos p{
+    text-align: right;
+    margin: 20px 20px;
+
+    
 }

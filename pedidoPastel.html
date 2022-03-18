@@ -4,59 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
-    <link rel="stylesheet" href="/styles/pedido.css">
+    <title>Crea tu pastel</title>
+    <link rel="stylesheet" href="./styles/pedido.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./assets/pangolincito.png">
 </head>
 <body>
     <header>
-        <img src="./assets/LogoGolden.png" alt="logo">
+        <img class="logo" src="./assets/pangolinletras.png" alt="logo">
         <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Sobre pedido</a></li>
-                <li><a href="">Perfil</a></li>
+            <ul class="izquierda">
+                <li class="letras"><a href="/index.html">Principal</a></li>
+                <li class="letras"><a href="./pedidoPastel.html">¡Crea tu pastel! </a></li>
+                <li class="letras"><a href="">Sucursales</a></li>
+                <li class="letras"><a href="">Entregas</a></li>
+                <li class="li-input">
+                    <div class="input-contenedor">
+                    <input type="text" placeholder="Buscar...">
+                    <img class="buscar" src="./assets/lupa.png" alt="Buscar">
+                </div>
+            </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section  class="title">
-            <h1>¿Cómo será tu pastel?</h1>
-        </section>
-        <section class="sabor">
-            <p>Sabor de bizcocho:</p>
-            <label for="fresa">Fresa <input type="checkbox" id="fresa"></label>
-            <label for="chocolate">Chocolate <input type="checkbox" id="chocolate"></label>
-            <label for="vainilla">Vainilla <input type="checkbox" id="vainilla"></label>
-            <label for="mantequilla">Mantequilla <input type="checkbox" id="mantequilla"></label>
-            
-        </section>
-        <section class="relleno">
-            <p>Relleno:</p>
-            <label for="fresas">Fresas <input type="checkbox" id="fresas"></label>
-            <label for="durazno">Duraznos <input type="checkbox" id="durazno"></label>
-            <label for="crema">Crema pastelera <input type="checkbox" id="crema"></label>
-            <label for="nueces">Nueces <input type="checkbox" id="nueces"></label>
-            <label for="mango">Mango <input type="checkbox" id="mango"></label>
+        <h1>¿Cómo será tu pastel?</h1>
+        <section class="bizcocho">
+            <div class="titulo"><p>Elige el sabor del bizcocho</p></div>
+            <div class="contenedor-tarjetas">
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/mantequilla.png" alt=""></div>
+                    <div class="nombre"><p>MANTEQUILLA</p></div>
+                    <div class="precio"><p>$100</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/vainilla.png" alt=""></div>
+                    <div class="nombre"><p>VAINILLA</p></div>
+                    <div class="precio"><p>$80</p></div>
+                </section>  
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/chocolate_biz.png" alt=""></div>
+                    <div class="nombre"><p>CHOCOLATE</p></div>
+                    <div class="precio"><p>$130</p></div>
+                </section>
+            </div>
         </section>
         <section class="cubierta">
-            <p>Cubierta:</p>
-            <label for="CremaCoco">Crema de Coco <input type="checkbox" id="CremaCoco"></label>
-            <label for="chocolateOsc">Chocolate Oscuro <input type="checkbox" id="chocolateOsc"></label>
-            <label for="cremas">Crema pastelera <input type="checkbox" id="cremas"></label>
-            <label for="fondant">Fondant <input type="checkbox" id="fondant"></label>
-            <label for="chantilly">Chantilly <input type="checkbox" id="chantilly"></label>
+            <div class="titulo"><p>Elige de que será la cubireta</p></div>
+            <p class="combinar">*Puedes combinar al menos dos sabores</p>
+            <div class="contenedor-tarjetas">
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/chantilly 1.png " alt=""></div>
+                    <div class="nombre"><p>CREMA PASTELERA</p></div>
+                    <div class="precio"><p>$60</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/fundir_chocolate 1.png" alt=""></div>
+                    <div class="nombre"><p>CHOCOLATE OSCURO</p></div>
+                    <div class="precio"><p>$80</p></div>
+                </section>  
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/chocolate-blanco 1.png" alt=""></div>
+                    <div class="nombre"><p>CHOCOLATE BLANCO</p></div>
+                    <div class="precio"><p>$95</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/coco_rallado 1.png" alt=""></div>
+                    <div class="nombre"><p>CREMA DE COCO Y COCO RALLADO</p></div>
+                    <div class="precio"><p>$110</p></div> 
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/crema-de-fresas 1.png" alt=""></div>
+                    <div class="nombre"><p>CREMA DE FRESA</p></div>
+                    <div class="precio"><p>$115</p></div>
+                </section>  
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/fondant.png" alt=""></div>
+                    <div class="nombre"><p>FONDANT ARCOIRIS</p></div>
+                    <div class="precio"><p>$130</p></div>
+                </section>
+            </div>
+        </section>
         </section>
         <section class="adornos">
-            <p>Adornos:</p>
-            <label for="frutas">frutas Variadas <input type="checkbox" id="frutas"></label>
-            <label for="cerezas">Cerezas <input type="checkbox" id="cerezas"></label>
-            <label for="chispas">Chispas de colores <input type="checkbox" id="chispas"></label>
-            <label for="frutosRojos">Frutos Rojos <input type="checkbox" id="frutosRojos"></label>
-            <label for="mariposas">Mariposas de Azúcar <input type="checkbox" id="mariposas"></label>
-            <label for="rayadura">Rayadura de Coco <input type="checkbox" id="rayadura"></label>
-
+            <div class="titulo"><p>Adorna tu pastel</p></div>
+            <p class="combinar">*Puedes combinar al menos dos  adornos</p>
+            <div class="contenedor-tarjetas">
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/frutas-tropicales.png" alt=""></div>
+                    <div class="nombre"><p>FRUTAS TROPICALES</p></div>
+                    <div class="precio"><p>$50</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/fresas.png" alt=""></div>
+                    <div class="nombre"><p>FRESAS</p></div>
+                    <div class="precio"><p>$55</p></div>
+                </section>  
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/flores 1.png" alt=""></div>
+                    <div class="nombre"><p>FLORES DE AZÚCAR</p></div>
+                    <div class="precio"><p>$70</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/frutos-rojos 1.png" alt=""></div>
+                    <div class="nombre"><p>FRUTOS ROJOS </p></div>
+                    <div class="precio"><p>$100</p></div>
+                </section>
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/nueces-almendras 1.png" alt=""></div>
+                    <div class="nombre"><p>NUECES Y ALMENDRAS</p></div>
+                    <div class="precio"><p>$80</p></div>
+                </section>  
+                <section class="tarjeta">
+                    <div class="pastel"><img src="./assets/cerezas 1.png" alt=""></div>
+                    <div class="nombre"><p>CEREZAS</p></div>
+                    <div class="precio"><p>$130</p></div>
+                </section>
+            </div>
         </section>
-    </main>
+    </main> 
+    <h1>¿Listo?</h1>
+    <section class="contenedor">
+        <form action="">
+            <h2 class="h2">Completa el formulario para que comencemos a preparlo</h2>
+            <input type="text" placeholder="Nombre completo">
+            <input class="telefono" type="number" placeholder="Teléfono">
+            <input type="text" placeholder="Correo electrónico">
+            <input class="descripcion" type="text" placeholder="Da una descripción general de tu pastel, también puedes agregar una dedicatoria... ">
+            <div class="button">
+                <a href="">Enviar</a>
+            </div>
+            
+        </form>
+    </section>
+
+    <footer>
+        <section class="redes">
+            <img src="./assets/facebook (1).png" alt="">
+            <img src="./assets/gorjeo (1).png" alt="">
+            <img src="./assets/instagram (1).png" alt="">
+            <img src="./assets/whatsapp.png" alt="">
+        </section>
+        <section class="datos">
+            <p>AV. independencia No. 1639	Piragua, CDMX	 </p>
+            <p>Horario de atención de 9:00hrs a 19:00hrs </p>
+            <p> Teléfono 91 287 5 21 85</p>
+            <p>Derechos reservados Pangolin SA. de CV</p>
+        </section>
+    </footer>
 </body>
 </html>
