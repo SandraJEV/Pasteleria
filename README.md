@@ -31,6 +31,6 @@ Bonus de despliegue (Montar la página en línea con dominio gratuito)
 
 [Vista usuario](https://sandrajev.github.io/Pasteleria/)
 
-Vista cliente 
+[Vista cliente](https://sandrajev.github.io/Pasteleria/cliente/pedidos.html) 
 
 ¡Vámonos hasta el espacio y más allá Explorers!
