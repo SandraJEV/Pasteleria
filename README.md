@@ -29,7 +29,7 @@ Bonus de despliegue (Montar la página en línea con dominio gratuito)
 
 [Ver diseño en Figma](https://www.figma.com/file/w9hCgrEivPioFEBsGRbiAr/Pangolin?node-id=64%3A8)
 
-[Vista usuario](sandrajev.github.io/pasteleria/)
+[Vista usuario](https://sandrajev.github.io/Pasteleria/)
 
 Vista cliente 
 
